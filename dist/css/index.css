@@ -1,0 +1,278 @@
+@charset "UTF-8";
+/* stylelint-enable */
+/* 重置样式 */
+* {
+  -webkit-tap-highlight-color: transparent;
+  outline: 0; }
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline; }
+
+img {
+  border: 0 none;
+  vertical-align: top; }
+
+i, em {
+  font-style: normal; }
+
+ol, ul {
+  list-style: none; }
+
+input, select, button, h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-family: inherit; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a, a:visited {
+  text-decoration: none;
+  color: #333; }
+
+body {
+  margin: 0 auto;
+  font-family: -apple-system,Helvetica,sans-serif;
+  -webkit-text-size-adjust: 100% !important; }
+
+html {
+  background-color: #efeff4; }
+
+a,
+button,
+input,
+textarea {
+  -webkit-tap-highlight-color: transparent; }
+
+input::-webkit-input-placeholder {
+  color: #ccc; }
+
+input:focus::-webkit-input-placeholder {
+  color: #ccc; }
+
+.wepay-form {
+  background-color: #efeff4; }
+  .wepay-form h4 {
+    font-size: 1.2rem;
+    height: 4.4rem;
+    line-height: 4.4rem;
+    font-weight: normal;
+    text-indent: 1.25rem; }
+
+.base-info,
+.my-address {
+  border-top: 0.05rem solid #ccc; }
+
+.info {
+  position: relative;
+  font-size: 1.6rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  background-color: #fff;
+  border-bottom: 0.05rem solid #ccc;
+  /*----------用来移除向下箭头----------*/
+  /*----------用来移除叉叉按钮----------*/ }
+  .info select::-ms-expand {
+    display: none; }
+  .info select {
+    position: relative;
+    height: 4.4rem;
+    border: none;
+    font-size: 1.6rem;
+    vertical-align: top;
+    margin-right: 1.75rem;
+    -webkit-appearance: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url("http://ourjs.github.io/static/2015/arrow.png");
+    background-position: right center;
+    padding-right: 1.4rem; }
+  .info input {
+    vertical-align: top;
+    height: 4.4rem;
+    font-size: 1.6rem;
+    color: #333;
+    border: none;
+    background-color: #fff; }
+  .info input[type='date']::-webkit-calendar-picker-indicator {
+    display: none; }
+  .info input[type='date']::-webkit-clear-button {
+    display: none; }
+  .info .icon {
+    position: absolute;
+    top: 1.2rem;
+    right: 0.5rem;
+    padding: 1rem; }
+    .info .icon::before {
+      content: '';
+      position: absolute;
+      top: 0.5rem;
+      left: 0.5rem;
+      display: inline-block;
+      width: 0.25rem;
+      height: 0.85rem;
+      -webkit-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      background-color: #ccc; }
+    .info .icon::after {
+      position: absolute;
+      left: 0.5rem;
+      top: 0.95rem;
+      content: '';
+      display: inline-block;
+      width: 0.25rem;
+      height: 0.85rem;
+      -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
+      background-color: #ccc; }
+
+.card-number input {
+  width: 14rem; }
+
+.name input {
+  width: 19rem; }
+
+.birth input, .valid input {
+  width: 19rem; }
+
+.location input {
+  width: 19rem; }
+
+.option {
+  display: inline-block;
+  width: 10.7rem;
+  text-indent: 1.25rem; }
+  .option .num {
+    font-size: 1rem; }
+
+.my-address {
+  margin-top: 2rem; }
+
+.show-detail {
+  margin-top: 2.6rem;
+  font-size: 1.2rem; }
+  .show-detail .hongkong,
+  .show-detail .macao {
+    display: inline-block;
+    font-size: 1.2rem;
+    line-height: 2rem; }
+    .show-detail .hongkong .times,
+    .show-detail .macao .times {
+      color: #ccc; }
+  .show-detail .hongkong {
+    margin-left: 1.25rem; }
+  .show-detail .macao {
+    margin-left: 2rem; }
+  .show-detail .fee {
+    margin-left: 1.25rem;
+    line-height: 2rem; }
+    .show-detail .fee .price {
+      color: #ff6633;
+      font-weight: bold; }
+    .show-detail .fee .detail {
+      margin-left: 0.75rem; }
+
+.pay-methods {
+  margin-top: 1.75rem;
+  text-align: center; }
+  .pay-methods .wepay {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    background-color: #266ace;
+    font-size: 1.8rem;
+    border: 0.05rem solid #1253b6;
+    width: -webkit-calc(100% - 48 * 0.05rem);
+    width: calc(100% - 48 * 0.05rem);
+    height: 4rem;
+    color: #fff;
+    border-radius: 0.5rem; }
+  .pay-methods .back {
+    position: absolute;
+    top: -1.5rem;
+    left: -webkit-calc(50% + 75 * 0.05rem);
+    left: calc(50% + 75 * 0.05rem);
+    background-color: #fe7248;
+    color: #fff;
+    border-radius: 0.25rem;
+    font-size: 1.2rem;
+    width: 4.15rem;
+    height: 2rem;
+    line-height: 2rem; }
+    .pay-methods .back::before {
+      position: absolute;
+      left: 0;
+      bottom: -0.5rem;
+      content: '';
+      display: inline-block;
+      width: 0;
+      height: 0;
+      overflow: hidden;
+      font-size: 0;
+      border-width: 0.5rem;
+      border-color: transparent transparent transparent #fe7248;
+      border-style: dashed dashed dashed solid; }
+  .pay-methods .tips {
+    margin-top: -0.4rem;
+    color: #8daddc;
+    font-size: 1rem; }
+  .pay-methods .cash {
+    font-size: 1.2rem;
+    padding: 1rem 5rem;
+    margin-top: 0.5rem;
+    border-radius: 0.5rem;
+    color: #266ace;
+    border: none;
+    background-color: #efeff4; }
+
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 10px; } }
+
+@media screen and (min-width: 360px) and (max-width: 374px) {
+  html {
+    font-size: 11.72875px; } }
+
+@media screen and (min-width: 375px) and (max-width: 383px) {
+  html {
+    font-size: 12px; } }
+
+@media screen and (min-width: 384px) and (max-width: 399px) {
+  html {
+    font-size: 12.5px; } }
+
+@media screen and (min-width: 400px) and (max-width: 413px) {
+  html {
+    font-size: 12.9375px; } }
+
+@media screen and (min-width: 414px) and (max-width: 423px) {
+  html {
+    font-size: 13.5px; } }
+
+@media screen and (min-width: 424px) and (max-width: 479px) {
+  html {
+    font-size: 15px; } }
+
+@media screen and (min-width: 480px) and (max-width: 539px) {
+  html {
+    font-size: 16.875px; } }
+
+@media screen and (min-width: 540px) and (max-width: 599px) {
+  html {
+    font-size: 18.75px; } }
+
+@media screen and (min-width: 600px) and (max-width: 639px) {
+  html {
+    font-size: 20px; } }
+
+@media screen and (min-width: 640px) and (max-width: 719px) {
+  html {
+    font-size: 22.5px; } }
+
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 25px; } }
